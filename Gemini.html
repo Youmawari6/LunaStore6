@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-[#0b0f19] text-white">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameVerse — Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        --gv-blue: #1d4ed8;
+        --gv-neon: #00d4ff;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      .neon-text {
+        color: var(--gv-neon);
+        text-shadow: 0 0 6px var(--gv-neon);
+      }
+    </style>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <!-- HEADER -->
+    <header
+      class="px-6 py-4 flex items-center justify-between max-w-6xl mx-auto w-full"
+    >
+      <div class="text-2xl font-bold neon-text">GameVerse</div>
+      <nav class="flex gap-6 items-center text-sm">
+        <a href="#" class="opacity-80 hover:opacity-100">Explore</a>
+        <a href="#" class="opacity-80 hover:opacity-100">Library</a>
+        <a
+          href="#"
+          class="px-3 py-1 bg-[var(--gv-blue)] rounded text-sm hover:opacity-90 transition"
+          >Cart</a
+        >
+      </nav>
+    </header>
+
+    <!-- HERO / CAROUSEL -->
+    <section class="relative w-full max-w-6xl mx-auto mt-6 rounded-2xl overflow-hidden">
+      <img
+        src="product/1.jpg"
+        alt="Featured Game"
+        class="w-full object-cover"
+      />
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-[#0b0f19] via-transparent to-transparent flex flex-col justify-end p-6"
+      >
+        <h1 class="text-3xl font-bold mb-2">Featured Game Title</h1>
+        <p class="opacity-80 mb-4 max-w-lg">
+          Discover the most popular new releases and trending games.
+        </p>
+        <button
+          class="bg-[var(--gv-blue)] px-4 py-2 rounded text-sm hover:opacity-90 transition"
+        >
+          View Details
+        </button>
+      </div>
+    </section>
+
+    <!-- POPULAR GAMES -->
+    <main class="max-w-6xl mx-auto px-6 py-10">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-xl font-semibold">Popular Games</h2>
+        <a href="#" class="text-sm opacity-80 hover:underline">Lihat Semua →</a>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <!-- Game Card -->
+        <div
+          class="bg-[#111829] p-4 rounded-lg hover:scale-[1.02] transition-transform"
+        >
+          <img
+            src="product/2.jpeg"
+            alt="Game 1"
+            class="w-full rounded mb-3"
+          />
+          <h3 class="text-lg font-semibold">Cyber Arena</h3>
+          <p class="text-sm opacity-80 mt-1">Action • Rating 4.8</p>
+          <div class="flex justify-between items-center mt-3">
+            <span class="text-[var(--gv-neon)] font-semibold">$29.99</span>
+            <button
+              class="px-3 py-1 text-sm bg-[var(--gv-blue)] rounded hover:opacity-90 transition"
+            >
+              Buy
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="bg-[#111829] p-4 rounded-lg hover:scale-[1.02] transition-transform"
+        >
+          <img
+            src="product/4.jpeg"
+            alt="Game 2"
+            class="w-full rounded mb-3"
+          />
+          <h3 class="text-lg font-semibold">Neon Drift</h3>
+          <p class="text-sm opacity-80 mt-1">Racing • Rating 4.6</p>
+          <div class="flex justify-between items-center mt-3">
+            <span class="text-[var(--gv-neon)] font-semibold">$19.99</span>
+            <button
+              class="px-3 py-1 text-sm bg-[var(--gv-blue)] rounded hover:opacity-90 transition"
+            >
+              Buy
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="bg-[#111829] p-4 rounded-lg hover:scale-[1.02] transition-transform"
+        >
+          <img
+            src="product/3.jpg"
+            alt="Game 3"
+            class="w-full rounded mb-3"
+          />
+          <h3 class="text-lg font-semibold">Galaxy Quest</h3>
+          <p class="text-sm opacity-80 mt-1">Adventure • Rating 4.7</p>
+          <div class="flex justify-between items-center mt-3">
+            <span class="text-[var(--gv-neon)] font-semibold">$24.99</span>
+            <button
+              class="px-3 py-1 text-sm bg-[var(--gv-blue)] rounded hover:opacity-90 transition"
+            >
+              Buy
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="py-6 text-center text-sm opacity-60 mt-auto">
+      © 2025 GameVerse. All rights reserved.
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,174 @@
+/* Import Font dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Variabel Warna */
+:root {
+    --primary-color: #007bff; /* Biru Primer */
+    --secondary-color: #6c757d; /* Abu-abu Sekunder */
+    --accent-color: #28a745; /* Hijau Aksen */
+    --background-light: #f8f9fa; /* Latar Belakang Sangat Terang */
+    --text-dark: #343a40; /* Teks Gelap */
+    --card-bg: #ffffff; /* Latar Belakang Kartu Putih */
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Container Profil Utama */
+.profile-container {
+    max-width: 800px;
+    width: 100%;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    padding: 30px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Header Profil */
+.profile-header {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Membuat gambar menjadi bulat */
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 5px solid var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.title {
+    font-size: 1.1em;
+    color: var(--secondary-color);
+    font-weight: 400;
+}
+
+/* Bagian Perkenalan */
+.profile-intro {
+    text-align: left;
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #e9ecef; /* Sedikit latar belakang abu-abu muda */
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--text-dark);
+}
+
+/* Tombol Tautan */
+.link-buttons {
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: block; /* Membuat tombol memenuhi lebar */
+    padding: 15px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1.05em;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.primary-btn {
+    background-color: var(--primary-color);
+}
+
+.primary-btn:hover {
+    background-color: #0056b3;
+}
+
+.secondary-btn {
+    background-color: var(--secondary-color);
+}
+
+.secondary-btn:hover {
+    background-color: #545b62;
+}
+
+.accent-btn {
+    background-color: var(--accent-color);
+}
+
+.accent-btn:hover {
+    background-color: #1e7e34;
+}
+
+/* Footer */
+footer {
+    padding-top: 15px;
+    border-top: 1px dashed #ccc;
+    font-size: 0.9em;
+    color: var(--secondary-color);
+}
+
+/* Responsifitas (Mobile First) */
+@media (max-width: 600px) {
+    .profile-container {
+        padding: 20px;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .btn {
+        font-size: 1em;
+        padding: 12px;
+    }
+}
